@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_progress_progresses",
+  "info": {
+    "name": "progress",
+    "icon": "angle-up"
+  },
+  "options": {},
+  "attributes": {
+    "indexNumber": {
+      "type": "biginteger"
+    },
+    "start": {
+      "type": "time"
+    },
+    "finish": {
+      "type": "time"
+    },
+    "photo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

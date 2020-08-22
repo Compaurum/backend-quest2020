@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "teams",
+  "info": {
+    "name": "Team"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "avatar": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "roads": {
+      "collection": "question"
+    },
+    "progress": {
+      "type": "component",
+      "repeatable": true,
+      "component": "progress.progress"
+    },
+    "phototask": {
+      "type": "component",
+      "repeatable": true,
+      "component": "photo-task.phototask"
+    }
+  }
+}

@@ -50,7 +50,7 @@
     },
     "answer": {
       "type": "string",
-      "private": true,
+      "private": false,
       "minLength": 6
     }
   }

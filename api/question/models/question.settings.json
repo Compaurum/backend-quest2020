@@ -47,6 +47,11 @@
         "quiz",
         "photo"
       ]
+    },
+    "answer": {
+      "type": "string",
+      "private": true,
+      "minLength": 6
     }
   }
 }
